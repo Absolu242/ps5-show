@@ -1,0 +1,162 @@
+.home {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    &-top {
+        width: 100%;
+        min-height: 50vh;
+        position: relative;
+        top: 50%;
+        .gameshow-content {
+            width: 100%;
+            height: inherit;
+            position: relative;
+            top: 10rem;
+            .slick-slider {
+                height: inherit;
+                .slick-list {
+                    position: relative;
+                    .slick-slide.slick-active.slick-center.slick-current {
+                        div {
+                            .oneGame {
+                                .game {
+                                    transform: translateY(-20px);
+                                    box-shadow: 2px 35px 12px #dbddde;
+                                    .game-name {
+                                        text-align: center;
+                                        display: block;
+                                        padding: 0.5rem 0;
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                        @media (max-width: 430px) {
+                            width: 20rem !important;
+                            div {
+                                .oneGame {
+                                    // width: 100%;
+                                    // display: flex !important;
+                                    // justify-content: center !important;
+                                    position: relative;
+                                    left: 3rem !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .gamecarousel {
+                width: 100%;
+                display: flex;
+                .oneGame {
+                    padding: 2rem;
+                }
+            }
+        }
+    }
+    &-bottom {
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        height: 30vh;
+        &-content {
+            max-width: 1114px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 3rem 0;
+            color: #646868;
+            align-items: center;
+        }
+        .user {
+            color: #000;
+            &-content {
+                display: flex;
+                align-items: center;
+            }
+            &-image {
+                img {
+                    width: 40px;
+                    border-radius: 50%;
+                }
+                padding-right: 0.5rem;
+            }
+            &-name {
+                font-weight: 500;
+            }
+        }
+        .menu {
+            &-content {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+            &-icon {
+                a {
+                    text-decoration: none;
+                    color: #646868;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    transition: all 0.2s ease;
+                }
+                margin: 0 1rem;
+                &:hover {
+                    a {
+                        position: relative;
+                        border-radius: 50%;
+                        padding: 0.5rem 0.8rem;
+                        background-color: #fff;
+                        box-shadow: 2px 5px 2px 2px #dbddde;
+                        overflow: hidden;
+                    }
+                }
+            }
+            @media (max-width: 768px) {
+                &-icon {
+                    a {
+                        text-decoration: none;
+                        color: #646868;
+                        font-size: 1.8rem;
+                        font-weight: lighter;
+                    }
+                    margin: 0 0.5rem;
+                }
+            }
+        }
+        .info {
+            &-content {
+                display: flex;
+                color: #000;
+                align-items: center;
+                span {
+                    padding-right: 1rem;
+                }
+            }
+            &-icon {
+                font-size: 1.3rem;
+            }
+        }
+        @media (max-width: 768px) {
+            &-content {
+                position: relative;
+                flex-wrap: wrap;
+                padding: 0 1rem;
+            }
+            .user {
+                order: 1;
+            }
+            .info {
+                order: 2;
+            }
+            .menu {
+                position: relative;
+                order: 3;
+                width: 100%;
+                margin: 1rem 0;
+            }
+        }
+    }
+}

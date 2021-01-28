@@ -1,0 +1,207 @@
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.home-top {
+  width: 100%;
+  min-height: 50vh;
+  position: relative;
+  top: 50%;
+}
+
+.home-top .gameshow-content {
+  width: 100%;
+  height: inherit;
+  position: relative;
+  top: 10rem;
+}
+
+.home-top .gameshow-content .slick-slider {
+  height: inherit;
+}
+
+.home-top .gameshow-content .slick-slider .slick-list {
+  position: relative;
+}
+
+.home-top .gameshow-content .slick-slider .slick-list .slick-slide.slick-active.slick-center.slick-current div .oneGame .game {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-box-shadow: 2px 35px 12px #dbddde;
+          box-shadow: 2px 35px 12px #dbddde;
+}
+
+.home-top .gameshow-content .slick-slider .slick-list .slick-slide.slick-active.slick-center.slick-current div .oneGame .game .game-name {
+  text-align: center;
+  display: block;
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+
+@media (max-width: 430px) {
+  .home-top .gameshow-content .slick-slider .slick-list .slick-slide.slick-active.slick-center.slick-current {
+    width: 20rem !important;
+  }
+  .home-top .gameshow-content .slick-slider .slick-list .slick-slide.slick-active.slick-center.slick-current div .oneGame {
+    position: relative;
+    left: 3rem !important;
+  }
+}
+
+.home-top .gameshow-content .gamecarousel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home-top .gameshow-content .gamecarousel .oneGame {
+  padding: 2rem;
+}
+
+.home-bottom {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  height: 30vh;
+}
+
+.home-bottom-content {
+  max-width: 1114px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem 0;
+  color: #646868;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-bottom .user {
+  color: #000;
+}
+
+.home-bottom .user-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-bottom .user-image {
+  padding-right: 0.5rem;
+}
+
+.home-bottom .user-image img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.home-bottom .user-name {
+  font-weight: 500;
+}
+
+.home-bottom .menu-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-bottom .menu-icon {
+  margin: 0 1rem;
+}
+
+.home-bottom .menu-icon a {
+  text-decoration: none;
+  color: #646868;
+  font-size: 2rem;
+  font-weight: lighter;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.home-bottom .menu-icon:hover a {
+  position: relative;
+  border-radius: 50%;
+  padding: 0.5rem 0.8rem;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 5px 2px 2px #dbddde;
+          box-shadow: 2px 5px 2px 2px #dbddde;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .home-bottom .menu-icon {
+    margin: 0 0.5rem;
+  }
+  .home-bottom .menu-icon a {
+    text-decoration: none;
+    color: #646868;
+    font-size: 1.8rem;
+    font-weight: lighter;
+  }
+}
+
+.home-bottom .info-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-bottom .info-content span {
+  padding-right: 1rem;
+}
+
+.home-bottom .info-icon {
+  font-size: 1.3rem;
+}
+
+@media (max-width: 768px) {
+  .home-bottom-content {
+    position: relative;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0 1rem;
+  }
+  .home-bottom .user {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .home-bottom .info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .home-bottom .menu {
+    position: relative;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+/*# sourceMappingURL=Home.css.map */

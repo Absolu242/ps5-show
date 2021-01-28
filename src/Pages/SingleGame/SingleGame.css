@@ -1,0 +1,87 @@
+.single {
+  width: 100%;
+}
+
+.single-content {
+  max-width: 1124px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.single-grid {
+  gap: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px auto;
+      grid-template-columns: 300px auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 5rem 0;
+}
+
+@media (max-width: 768px) {
+  .single-grid {
+    min-height: 100vh;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 300px auto;
+        grid-template-rows: 300px auto;
+  }
+}
+
+.single-left .img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.single-name h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+.single-details .heading {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.3rem 0;
+  color: #646868;
+}
+
+.single-details .heading span {
+  font-size: 15px;
+  font-weight: normal;
+  color: #000;
+}
+
+.single-images {
+  width: 100%;
+}
+
+.single-images__content {
+  max-width: 1124px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+}
+
+.single-images__content .image {
+  height: 550px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+@media (max-width: 768px) {
+  .single-images__content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+/*# sourceMappingURL=SingleGame.css.map */
